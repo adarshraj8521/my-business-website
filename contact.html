@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>Adarsh tech marketing</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="content">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form onsubmit="submitForm(event)">
+        <input type="text" placeholder="Adarsh Raj" required>
+        <input type="email" placeholder="adarshrajsingh8521@gmail.com" required>
+        <textarea rows="5" placeholder="we provide the best" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy;Adarsh tech marketing. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function submitForm(event) {
+      event.preventDefault();
+      alert("Thank you! We'll get back to you soon.");
+    }
+  </script>
+
+</body>
+</html>
